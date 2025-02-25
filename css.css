@@ -6,3 +6,9 @@ body{
     background-color:blue;
     border-radius: 20px;
 }
+form input{
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

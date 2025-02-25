@@ -1,4 +1,17 @@
+body{
+    background: rgb(168, 211, 219);
+}
+
 .solid{
     background-color:blue;
     border-radius: 20px;
+}
+
+form input{
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
 }

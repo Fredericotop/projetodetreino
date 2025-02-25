@@ -2,3 +2,7 @@
     background-color:blue;
     border-radius: 20px;
 }
+.transparente{
+    background-color: transparent;
+    border-radius: 20px;
+}

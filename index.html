@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,30 +9,31 @@
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="login.html">
     <link rel="stylesheet" href="home.html">
-    <title> Cadastro e Login</title>
+    <title> Cadastrose e Login</title>
 </head>
 
 <body>
+    <main>
     <form action="">
 
         <!-- Campo Cpf -->
-        <div>
+        <div class="input">
             <label for="cpf">CPF:</label>
             <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
         </div>
 
         <!-- Campo Senha -->
-        <div>
+        <div class="input">
             <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required>
+            <input type="password" id="senha" name="senha" required placeholder="Insira sua Senha">
         </div>
         <!-- Campo Nome -->
-        <div>
+        <div class="input">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu Nome">
         </div>
         <!--  Gênero-->
-        <div>
+        <div class="input">
             <label for="genero">Gênero:</label>
             <select id="genero" name="genero" required>
                 <option value="">Selecione um gênero</option>
@@ -40,37 +42,37 @@
             </select>
         </div>
         <!-- foto -->
-        <div>
+        <div class="input">
             <label for="foto">Foto:</label>
             <input type="file" id="foto" name="foto" accept="'image/jpeg, image/png" required>
         </div>
         <!-- email -->
-        <div>
+        <div class="input">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required placeholder="Insira seu Email">
         </div>
         <!-- data de nacimento -->
-        <div>
+        <div class="input">
             <label for="data_nascimento">Data de Nascimento:</label>
-            <input type="date" id="data_nascimento" name="data_nascimento" required>
+            <input type="date" id="data_nascimento" name="data_nascimento" required placeholder="Insira Sua data nascimento">
         </div>
         <!-- Telefone -->
-        <div>
+        <div class="input">
             <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required>
+            <input type="tel" id="telefone" name="telefone" required placeholder="Digite seu Telefone">
         </div>
         <!-- endereço -->
-        <div>
+        <div class="input">
             <label for="endereco">Endereço:</label>
-            <input type="text" id="endereco" name="endereco" required>
+            <input type="text" id="endereco" name="endereco" required placeholder="Insira seu Endereço">
         </div>
         <!-- cargo -->
-        <div>
+        <div class="input">
             <label for="cargo">Cargo:</label>
             <input type="text" id="cargo" name="cargo" required>
         </div>
         <!-- botão de cadatro -->
-        <div>
+        <div class="input">
             <button type="submit" oneclik="true" class="solid">Cadastrar</button>
         </div>
 
@@ -79,6 +81,73 @@
         <a href="login.html">Já possui cadastro? Faça login</a>
         </button>
     </form>
+</main>
 </body>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    input {
+        margin-bottom: 20px;
+    }
+    label {
+        font-weight: bold;
+    }
+    button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    a {
+        color: #4CAF50;
+        text-decoration: none;
+    }
+    select {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+    @media (max-width: 600px) {
+        form {
+            padding: 20px;
+        }
+    }
+    @media (max-width: 400px) {
+        form {
+            padding: 10px;
+        }
+    }
+    /* Transparent button */
+    .transparente {
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+    }
+    /* Login button */
+   .transparente a {
+    color: #fff;
+    }
 
 </html>

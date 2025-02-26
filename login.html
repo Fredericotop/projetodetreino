@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>teste</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <form action="">    
-        <div>
+<body class="font-[Open_Sans] backgroud flex items-center justify-center h-screen w-screen ">
+    <form class="border rounded-lg w-64 h-10 ">    
+        <div class="border rounded-lg w-64 h-10">
             <label for="Email">Email:</label>
             <input type="email" id="Email" name="email" required placeholder="Insira seu Email">
 
         </div>
-        <div>
+        <div class="border rounded-lg w-64 h-10">
             <label for="Password">Senha:</label>
             <input type="password" id="Password" name="password" required placeholder="Insira sua Senha">
         </div>
 
-        <div>
-            <input for="Cargo">Cargo:</input>
+        <div class="border rounded-lg w-64 h-10">
+            <label for="Cargo">Cargo:</label>
             <input type="text" id="Cargo" name="Cargo" >
         </div>
-        <div>
+        <div class="border rounded-lg w-64 h-10">
             <input type="submit" value="Login">
         </div>
     </form>

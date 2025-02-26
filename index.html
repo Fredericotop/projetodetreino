@@ -10,15 +10,20 @@
     
     <title> Cadastrose e Login</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme{
+            --font-sans: 'Open Sans',
+        }
+    </style>
 </head>
 
-<body class="font-[Open_Sans] ">
-    <main class="bg-[url(.\laragon\www\projetosphp\eaimagem.png)] flex items-center justify-center h-screen w-screen">
+<body>
+    <main class="bg-[url(./eaimagem.png)] flex items-center justify-center h-screen w-screen bg-no-repeat bg-cover bg-center">
     <form class="bg-sky-500 h-48 grid-cols-2 place-content-center gap-4 blur-none">
 
         <!-- Campo Cpf -->
         <div class="input">
-            <label for="cpf">CPF:</label>
+            <label class="font-bold" for="cpf">CPF:</label>
             <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
         </div>
 

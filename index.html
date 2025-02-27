@@ -101,9 +101,10 @@
 
 <script>
     function validateFields() {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        const emailInput = document.getElementById('email');
-        const form = document.querySelector('form');
+        const email= document.getElementById("email").value;
+    if (!email) {
+        document.getElementById('recover-passwordbutton')
+    }
 </script>
 
 </html>

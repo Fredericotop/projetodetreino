@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinamento</title>
     <link rel="stylesheet" href="css.css">
-    
+
     <title> Cadastrose e Login</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
@@ -18,78 +17,87 @@
 </head>
 
 <body>
-    <main class="bg-[url(./eaimagem.png)] flex items-center justify-center h-screen w-screen bg-no-repeat bg-cover bg-center">
-        <div class="bg-sky-500/50 p-8 rounded-lg backdrop-blur-md w-full max-w-4xl">
-            <form class="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+    <main
+        class="bg-[url(./eaimagem.png)] flex items-center justify-center h-screen w-screen bg-no-repeat bg-cover bg-center">
+        <div class="bg-sky-500/50 p-5 rounded-lg backdrop-blur-md w-full max-w-2xl">
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-        <!-- Campo Cpf -->
-        <div class="flex flex-col">
-            <label  class="font-bold mb-1"  for="cpf">CPF:</label  class="font-bold mb-1">
-            <input class="p-2 rounded" type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
-        </div>
+                <!-- Campo Cpf -->
+                <div class="flex flex-col">
+                    <label class="font-bold mb-1" for="cpf">CPF:</label class="font-bold mb-1">
+                    <input class="p-2 rounded" type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                </div>
 
-        <!-- Campo Senha -->
-        <div class="flex flex-col">
-            <label  class="font-bold mb-1" for="senha">Senha:</label  class="font-bold mb-1">
-            <input class="p-2 rounded" type="password" id="senha" name="senha" required placeholder="Insira sua Senha">
-        </div>
-        <!-- Campo Nome -->
-        <div class="flex flex-col">
-            <label  class="font-bold mb-1" for="nome">Nome:</label  class="font-bold mb-1">
-            <input class="p-2 rounded" type="text" id="nome" name="nome" required placeholder="Digite seu Nome">
-        </div>
-        <!--  Gênero-->
-        <div class="flex flex-col">
-            <label  class="font-bold mb-1" for="genero">Gênero:</label  class="font-bold mb-1">
-            <select id="genero" name="genero" required>
-                <option value="">Selecione um gênero</option>
-                <option value="masculino">Masculino</option>
-                <option value="feminino">Feminino</option>
-            </select>
-        </div>
-        <!-- foto -->
-        <div class="flex flex-col">
-            <label  class="font-bold mb-1" for="foto">Foto:</label  class="font-bold mb-1">
-            <input class="p-2 rounded" type="file" id="foto" name="foto" accept="'image/jpeg, image/png" required>
-        </div>
-        <!-- email -->
-        <div class="flex flex-col">
-            <label  class="font-bold mb-1" for="email">Email:</label  class="font-bold mb-1">
-            <input class="p-2 rounded" type="email" id="email" name="email" required placeholder="Insira seu Email">
-        </div>
-        <!-- data de nacimento -->
-        <div class="flex flex-col flex items-stretch">
-            <label  class="font-bold mb-1" for="data_nascimento">Data de Nascimento:</label  class="font-bold mb-1">
-            <input class="p-2 rounded" type="date" id="data_nascimento" name="data_nascimento" required placeholder="Insira Sua data nascimento">
-        </div>
-        <!-- Telefone -->
-        <div class="flex flex-col">
-            <label  class="font-bold mb-1" for="telefone">Telefone:</label  class="font-bold mb-1">
-            <input class="p-2 rounded" type="tel" id="telefone" name="telefone" required placeholder="Digite seu Telefone">
-        </div>
-        <!-- endereço -->
-        <div class="flex flex-col">
-            <label  class="font-bold mb-1" for="endereco">Endereço:</label  class="font-bold mb-1">
-            <input class="p-2 rounded" type="text" id="endereco" name="endereco" required placeholder="Insira seu Endereço">
-        </div>
-        <!-- cargo -->
-        <div class="flex flex-col">
-            <label  class="font-bold mb-1" for="cargo">Cargo:</label  class="font-bold mb-1">
-            <input class="p-2 rounded" type="text" id="cargo" name="cargo" required>
-        </div >
-        <!-- botão de cadatro -->
-         <div class="col-span-full flex justify-center mt-6">
-        <button type="submit" oneclik="true" class="bg-sky-500 hover:bg-sky-700 rounded-3xl">Cadastrar</button>
-        </div>
+                <!-- Campo Senha -->
+                <div class="flex flex-col">
+                    <label class="font-bold mb-1" for="senha">Senha:</label class="font-bold mb-1">
+                    <input class="p-2 rounded" type="password" id="senha" name="senha" required
+                        placeholder="Insira sua Senha">
+                </div>
+                <!-- Campo Nome -->
+                <div class="flex flex-col">
+                    <label class="font-bold mb-1" for="nome">Nome:</label class="font-bold mb-1">
+                    <input class="p-2 rounded" type="text" id="nome" name="nome" required placeholder="Digite seu Nome">
+                </div>
+                <!--  Gênero-->
+                <div class="flex flex-col">
+                    <label class="font-bold mb-1" for="genero">Gênero:</label class="font-bold mb-1">
+                    <select id="genero" name="genero" required>
+                        <option value="">Selecione um gênero</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+                </div>
+                <!-- foto -->
+                <div class="flex flex-col">
+                    <label class="font-bold mb-1" for="foto">Foto:</label class="font-bold mb-1">
+                    <input class="p-2 rounded" type="file" id="foto" name="foto" accept="'image/jpeg, image/png"
+                        required>
+                </div>
+                <!-- email -->
+                <div class="flex flex-col">
+                    <label class="font-bold mb-1" for="email">Email:</label class="font-bold mb-1">
+                    <input class="p-2 rounded" type="email" id="email" name="email" required
+                        placeholder="Insira seu Email">
+                </div>
+                <!-- data de nacimento -->
+                <div class="flex flex-col flex items-stretch">
+                    <label class="font-bold mb-1" for="data_nascimento">Data de Nascimento:</label
+                        class="font-bold mb-1">
+                    <input class="p-2 rounded" type="date" id="data_nascimento" name="data_nascimento" required
+                        placeholder="Insira Sua data nascimento">
+                </div>
+                <!-- Telefone -->
+                <div class="flex flex-col">
+                    <label class="font-bold mb-1" for="telefone">Telefone:</label class="font-bold mb-1">
+                    <input class="p-2 rounded" type="tel" id="telefone" name="telefone" required
+                        placeholder="Digite seu Telefone">
+                </div>
+                <!-- endereço -->
+                <div class="flex flex-col">
+                    <label class="font-bold mb-1" for="endereco">Endereço:</label class="font-bold mb-1">
+                    <input class="p-2 rounded" type="text" id="endereco" name="endereco" required
+                        placeholder="Insira seu Endereço">
+                </div>
+                <!-- cargo -->
+                <div class="flex flex-col">
+                    <label class="font-bold mb-1" for="cargo">Cargo:</label class="font-bold mb-1">
+                    <input class="p-2 rounded" type="text" id="cargo" name="cargo" required>
+                </div>
+                <!-- botão de cadatro -->
+                <div class="col-span-full flex justify-center mt-6">
+                    <button type="submit" oneclik="true"
+                        class="bg-sky-500 hover:bg-sky-700 rounded-3xl">Cadastrar</button>
+                </div>
 
-        <!-- Login -->
-         <div class="col-span-full flex justify-center mt-6">
-        <button class="bg-sky-100 hover: bg-sky-1  flex flex-col">
-        <a href="login.html">Já possui cadastro? Faça login</a>
-        </button>
-        </div>
-    </form>
-</main>
+                <!-- Login -->
+                <div class="col-span-full flex justify-center mt-6">
+                    <button class="bg-sky-100 hover: bg-sky-1  flex flex-col">
+                        <a href="login.html">Já possui cadastro? Faça login</a>
+                    </button>
+                </div>
+            </form>
+    </main>
 </body>
 
 

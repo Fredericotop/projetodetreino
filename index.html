@@ -55,7 +55,7 @@
                 </div>
                 <!-- email -->
                 <div class="flex flex-col">
-                    <label class="font-bold mb-1" for="email">Email:</label class="font-bold mb-1">
+                    <label class="font-bold mb-1" for="email" onchange="validateFields">Email:</label class="font-bold mb-1">
                     <input class="p-2 rounded" type="email" id="email" name="email" required
                         placeholder="Insira seu Email">
                 </div>
@@ -86,12 +86,12 @@
                 <!-- botão de cadatro -->
                 <div class="col-span-full flex justify-center mt-6">
                     <button type="submit" oneclik="true"
-                        class="bg-sky-500 hover:bg-sky-700 rounded-3xl">Cadastrar</button>
+                        class="bg-sky-500 hover:bg-sky-700 rounded-3xl" disabled="true">Cadastrar</button>
                 </div>
 
                 <!-- Login -->
                 <div class="col-span-full flex justify-center mt-6">
-                    <button class="ButtonLink">
+                    <button class="bg-zinc-500 hover: bg-sky-100  flex flex-col" disabled="true">
                         <a href="login.html">Já possui cadastro? Faça login</a>
                     </button>
                 </div>
@@ -99,7 +99,12 @@
     </main>
 </body>
 
-
+<script>
+    function validateFields() {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailInput = document.getElementById('email');
+        const form = document.querySelector('form');
+</script>
 
 </html>
 <!-- #013440, #026873, #2AB0BF, #CD56D9, F28241 -->
